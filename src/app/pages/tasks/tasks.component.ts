@@ -95,6 +95,15 @@ export class TasksComponent implements OnInit, OnDestroy{
     //console.log('after', this.postBody);
     setTimeout(() => {
       this.getSelectedData1();
+      for(let i=0; i<this.gList.length; i++){
+
+        let x = this.gList[i].waterTime;
+              
+  
+        var dd = new Date(this.gList[i].waterTime);
+        this.gList[i].value = 'Watered';
+  
+      }
           this.sub = this.tasksService.waterPlants(this.postBody)
           .subscribe(data => {
             console.log(data)
