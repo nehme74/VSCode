@@ -4,7 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## First Time when Clone
 
-Run npm install
+use npm install
+
+## To Run
+
+use npm start
 
 ## Development server
 
