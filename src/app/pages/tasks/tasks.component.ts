@@ -93,7 +93,7 @@ export class TasksComponent implements OnInit, OnDestroy{
 
     this.postBody = JSON.stringify(this.gList);
     //console.log('after', this.postBody);
-    //setTimeout(() => {
+    setTimeout(() => {
       this.getSelectedData1();
           this.sub = this.tasksService.waterPlants(this.postBody)
           .subscribe(data => {
@@ -103,7 +103,7 @@ export class TasksComponent implements OnInit, OnDestroy{
   
         this.gList = [];
         this.postBody = null;  
-    //}, 10000);
+    }, 10000);
     
   }
   getGarden() {
